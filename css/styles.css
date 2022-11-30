@@ -1,0 +1,216 @@
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''), url('../fonts/montserrat-v25-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url('../fonts/montserrat-v25-latin-regular.woff')
+      format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-500 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''), url('../fonts/montserrat-v25-latin-500.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url('../fonts/montserrat-v25-latin-500.woff')
+      format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-italic - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 400;
+  src: local(''), url('../fonts/montserrat-v25-latin-italic.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url('../fonts/montserrat-v25-latin-italic.woff')
+      format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+:root {
+  --prymary-color: #4f4f4f;
+  --secondary-color: #333333;
+  --title-color: #f3b562;
+  --accent-color: #647b64;
+
+  --bg-color: #f3f1ee;
+  --footer-bg-color: #f0dcc5;
+
+  --btn-color: #fefefe;
+  --btn-bg-color: linear-gradient(102.3deg, #647b64 -4.62%, #66ac66 178.22%),
+    linear-gradient(102.3deg, #0bb1e3 -4.62%, #0f2976 178.22%), #0e70af;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--prymary-color);
+
+  background-color: var(--bg-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.section__title {
+  font-size: 24px;
+  line-height: 1.33;
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+
+.section__descr {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.33;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+.section__text {
+  letter-spacing: 0.04em;
+}
+
+/* Button  */
+
+.btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--btn-color);
+
+  background: var(--btn-bg-color);
+  border: none;
+
+  cursor: pointer;
+}
+
+.site-nav__btn {
+  border-radius: 3px;
+}
+
+.btn--primary {
+  text-transform: uppercase;
+  border-radius: 2px;
+}
+
+.btn:hover,
+.btn:focus {
+  color: var(--accent-color);
+
+  background: var(--btn-color);
+  box-shadow: 0px 20px 40px rgba(128, 143, 150, 0.4);
+}
+
+/* header  */
+
+/* site-nav  */
+
+.site-nav__link {
+  position: relative;
+
+  /* block  */
+  display: inline-block;
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.site-nav__link:hover::after,
+.site-nav__link:focus::after,
+.company-box__link:hover::after,
+.company-box__link:focus::after,
+.support-box__link:hover::after,
+.support-box__link:focus::after {
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+
+  content: '';
+  display: block;
+  height: 1px;
+  width: 100%;
+
+  background-color: var(--secondary-color);
+}
+
+.hero__title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.33;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+}
+
+.hero__text {
+  letter-spacing: 0.04em;
+}
+
+/* Advantages and features */
+
+.advantages-list__link,
+.feature-list__link {
+  text-decoration: none;
+}
+
+.advantages-list__title,
+.feature-list__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.5;
+  color: var(--secondary-color);
+}
+
+.advantages-list__descr,
+.feature-list__descr {
+  font-size: 14px;
+  line-height: 1.57;
+  letter-spacing: 0.04em;
+  color: var(--prymary-color);
+}
+
+/* team  */
+
+.team-list__descr {
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+.team-list__title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.57;
+}
+
+.team-list__text {
+  font-style: italic;
+  letter-spacing: 0.04em;
+}
+
+/* footer  */
+
+.page-footer {
+  background-color: var(--footer-bg-color);
+}
+
+.company-box__text,
+.support-box__text,
+.form-footer__text {
+  font-weight: 500;
+  color: var(--accent-color);
+}
+
+.company-box__link,
+.support-box__link {
+  position: relative;
+
+  display: inline-block;
+
+  text-decoration: none;
+  color: var(--secondary-color);
+}
