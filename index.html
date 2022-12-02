@@ -12,276 +12,308 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav class="site-nav">
-        <a href="./"
-          ><img src="./images/logo.svg" alt="Awesome UI logo" aria-label="site`s logo"
-        /></a>
+    <header class="page-header">
+      <div class="container page-header__container">
+        <nav class="site-nav">
+          <a href="./"
+            ><img src="./images/logo.svg" alt="Awesome UI logo" aria-label="site`s logo"
+          /></a>
 
-        <ul class="site-nav__list list">
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="#">Benefits</a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="#">Features</a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="#">About</a>
-          </li>
-          <li class="site-nav__item">
-            <a class="site-nav__link" href="#">Team</a>
-          </li>
-        </ul>
+          <ul class="site-nav__list list">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#">Benefits</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#">Features</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#">About</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#">Team</a>
+            </li>
+          </ul>
+        </nav>
 
         <button class="btn site-nav__btn" type="button">Register</button>
-      </nav>
+      </div>
     </header>
 
     <main>
       <!-- Hero  -->
-      <section class="hero">
-        <!-- Hero  -->
-        <h1 class="hero__title">Awesome User Interface is what we can apply</h1>
+      <section class="hero section no-top-padding">
+        <div class="container hero-container">
+          <div class="hero-box">
+            <h1 class="hero__title">Awesome User Interface is what we can apply</h1>
 
-        <p class="hero__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing eliticon. Augue et eros, pellentesque
-          et. Tristique ullamcorper ac pharetra in nisi sit vivamus lorem.
-        </p>
+            <p class="hero__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing eliticon. Augue et eros,
+              pellentesque et. Tristique ullamcorper ac pharetra in nisi sit vivamus lorem.
+            </p>
 
-        <button class="btn btn--primary" type="button">Get started</button>
+            <button class="btn btn--primary" type="button">Get started</button>
+          </div>
 
-        <img src="./images/hero.png" alt="Woman is playing tennis" />
+          <img src="./images/hero.png" alt="Woman is playing tennis" />
+        </div>
       </section>
 
       <!-- Advantages -->
       <section class="section">
-        <h2 class="section__title">Advantages</h2>
-        <p class="section__descr">Our Benefits</p>
+        <div class="container advantages-container">
+          <div class="advantages-box">
+            <h2 class="section__title">Advantages</h2>
+            <p class="section__descr">Our Benefits</p>
 
-        <p class="section__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae nullam aliquet
-          dignissim quis. Vel, faucibus ac justo aliquam donec enim, commodo fermum vitae. Et velit
-          sceleris, commodo fermentum vitae. Et velit sceleris
-        </p>
+            <p class="section__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae nullam aliquet
+              dignissim quis. Vel, faucibus ac justo aliquam donec enim, commodo fermum vitae. Et
+              velit sceleris, commodo fermentum vitae. Et velit sceleris
+            </p>
 
-        <button class="btn btn--primary" type="button">Get started</button>
+            <button class="btn btn--primary" type="button">Get started</button>
+          </div>
 
-        <ul class="advantages-list list">
-          <li class="advantages-list__item">
-            <a class="advantages-list__link" href="#">
-              <img src="./images/smart-car.svg" alt="icon" />
-              <h3 class="advantages-list__title">Car Rental</h3>
-              <p class="advantages-list__descr">
-                Lorem ipsum dolor sit ame, consectetur adipiscing elit. Sit quis vitae
-              </p>
-            </a>
-          </li>
-          <li class="advantages-list__item">
-            <a class="advantages-list__link" href="#">
-              <img src="./images/ship.svg" alt="icon" />
-              <h3 class="advantages-list__title">Boat Cruise</h3>
-              <p class="advantages-list__descr">
-                Lorem ipsum dolor sit ame, consectetur adipiscing elit. Sit quis vitae
-              </p>
-            </a>
-          </li>
-          <li class="advantages-list__item">
-            <a class="advantages-list__link" href="#">
-              <img src="./images/bus.svg" alt="icon" />
-              <h3 class="advantages-list__title">Bus Trip</h3>
-              <p class="advantages-list__descr">
-                Lorem ipsum dolor sit ame, consectetur adipiscing elit. Sit quis vitae
-              </p>
-            </a>
-          </li>
-          <li class="advantages-list__item">
-            <a class="advantages-list__link" href="#">
-              <img src="./images/driving.svg" alt="icon" />
-              <h3 class="advantages-list__title">Road Trip</h3>
-              <p class="advantages-list__descr">
-                Lorem ipsum dolor sit ame, consectetur adipiscing elit. Sit quis vitae
-              </p>
-            </a>
-          </li>
-        </ul>
+          <ul class="advantages-list list">
+            <li class="advantages-list__item">
+              <a class="advantages-list__link" href="#">
+                <img src="./images/smart-car.svg" alt="icon" />
+                <h3 class="advantages-list__title">Car Rental</h3>
+                <p class="advantages-list__descr">
+                  Lorem ipsum dolor sit ame, consectetur adipiscing elit. Sit quis vitae
+                </p>
+              </a>
+            </li>
+
+            <li class="advantages-list__item">
+              <a class="advantages-list__link" href="#">
+                <img src="./images/ship.svg" alt="icon" />
+                <h3 class="advantages-list__title">Boat Cruise</h3>
+                <p class="advantages-list__descr">
+                  Lorem ipsum dolor sit ame, consectetur adipiscing elit. Sit quis vitae
+                </p>
+              </a>
+            </li>
+
+            <li class="advantages-list__item">
+              <a class="advantages-list__link" href="#">
+                <img src="./images/bus.svg" alt="icon" />
+                <h3 class="advantages-list__title">Bus Trip</h3>
+                <p class="advantages-list__descr">
+                  Lorem ipsum dolor sit ame, consectetur adipiscing elit. Sit quis vitae
+                </p>
+              </a>
+            </li>
+
+            <li class="advantages-list__item">
+              <a class="advantages-list__link" href="#">
+                <img src="./images/driving.svg" alt="icon" />
+                <h3 class="advantages-list__title">Road Trip</h3>
+                <p class="advantages-list__descr">
+                  Lorem ipsum dolor sit ame, consectetur adipiscing elit. Sit quis vitae
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- Features  -->
       <section class="section">
-        <h2 class="section__title">Features</h2>
-        <p class="section__descr">What we can apply</p>
+        <div class="container">
+          <h2 class="section__title">Features</h2>
+          <p class="section__descr">What we can apply</p>
 
-        <ul class="feature-list list">
-          <li class="feature-list__item">
-            <a class="feature-list__link" href="#">
-              <img src="./images/python.svg" alt="icon" />
-              <h3 class="feature-list__title">MOT consectet</h3>
-              <p class="feature-list__descr">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae
-              </p>
-            </a>
-          </li>
-          <li class="feature-list__item">
-            <a class="feature-list__link" href="#">
-              <img src="./images/iost.svg" alt="icon" />
-              <h3 class="feature-list__title">MOT consectet</h3>
-              <p class="feature-list__descr">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae
-              </p>
-            </a>
-          </li>
-          <li class="feature-list__item">
-            <a class="feature-list__link" href="#">
-              <img src="./images/stacks.svg" alt="icon" />
-              <h3 class="feature-list__title">MOT consectet</h3>
-              <p class="feature-list__descr">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae
-              </p>
-            </a>
-          </li>
-        </ul>
+          <ul class="feature-list list">
+            <li class="feature-list__item">
+              <a class="feature-list__link" href="#">
+                <img src="./images/python.svg" alt="icon" />
+                <h3 class="feature-list__title">MOT consectet</h3>
+                <p class="feature-list__descr">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae
+                </p>
+              </a>
+            </li>
+            <li class="feature-list__item">
+              <a class="feature-list__link" href="#">
+                <img src="./images/iost.svg" alt="icon" />
+                <h3 class="feature-list__title">MOT consectet</h3>
+                <p class="feature-list__descr">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae
+                </p>
+              </a>
+            </li>
+            <li class="feature-list__item">
+              <a class="feature-list__link" href="#">
+                <img src="./images/stacks.svg" alt="icon" />
+                <h3 class="feature-list__title">MOT consectet</h3>
+                <p class="feature-list__descr">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- About us  -->
       <section class="section">
-        <img src="./images/our-team.jpg" alt="Our team" />
-        <h2 class="section__title">About us</h2>
-        <p class="section__descr">Who we are</p>
+        <div class="container about-us-container">
+          <img src="./images/our-team.jpg" alt="Our team" />
+          <div class="about-us-box">
+            <h2 class="section__title">About us</h2>
+            <p class="section__descr">Who we are</p>
 
-        <p class="section__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae nullam aliquet
-          dignissim quis. Vel, faucibus ac justo aliquam donec enim, commodo fermentum vitae. Et
-          velit sceleris, commodo entum vitaefermentum vitae. Et velit sceleris nullam aliquet
-          dignissim
-        </p>
+            <p class="section__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae nullam aliquet
+              dignissim quis. Vel, faucibus ac justo aliquam donec enim, commodo fermentum vitae. Et
+              velit sceleris, commodo entum vitaefermentum vitae. Et velit sceleris nullam aliquet
+              dignissim
+            </p>
 
-        <button class="btn btn--primary" type="button">Get started</button>
+            <button class="btn btn--primary" type="button">Get started</button>
+          </div>
+        </div>
       </section>
 
       <!-- Our team  -->
-      <section>
-        <h2 class="section__title">Our Team</h2>
-        <p class="section__descr">How we look like</p>
+      <section class="section">
+        <div class="container">
+          <h2 class="section__title">Our Team</h2>
+          <p class="section__descr">How we look like</p>
 
-        <ul class="team-list list">
-          <li class="team-list__item">
-            <img src="./images/person-1.png" alt="" />
-            <p class="team-list__descr">CTO May & Baker</p>
-            <h3 class="team-list__title">Tayo Oshinuwa</h3>
+          <ul class="team-list list">
+            <li class="team-list__item">
+              <img class="team-list__img" src="./images/person-1.png" alt="" />
+              <p class="team-list__descr">CTO May & Baker</p>
+              <h3 class="team-list__title">Tayo Oshinuwa</h3>
 
-            <blockquote class="team-list__text">
-              “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae“
-            </blockquote>
-          </li>
+              <blockquote class="team-list__text">
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae“
+              </blockquote>
+            </li>
 
-          <li class="team-list__item">
-            <img src="./images/person-2.png" alt="" />
-            <p class="team-list__descr">CTO May & Baker</p>
-            <h3 class="team-list__title">Tayo Oshinuwa</h3>
+            <li class="team-list__item">
+              <img class="team-list__img" src="./images/person-2.png" alt="" />
+              <p class="team-list__descr">CTO May & Baker</p>
+              <h3 class="team-list__title">Tayo Oshinuwa</h3>
 
-            <blockquote class="team-list__text">
-              “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae“
-            </blockquote>
-          </li>
+              <blockquote class="team-list__text">
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae“
+              </blockquote>
+            </li>
 
-          <li class="team-list__item">
-            <img src="./images/person-3.png" alt="" />
-            <p class="team-list__descr">CTO May & Baker</p>
-            <h3 class="team-list__title">Tayo Oshinuwa</h3>
+            <li class="team-list__item">
+              <img class="team-list__img" src="./images/person-3.png" alt="" />
+              <p class="team-list__descr">CTO May & Baker</p>
+              <h3 class="team-list__title">Tayo Oshinuwa</h3>
 
-            <blockquote class="team-list__text">
-              “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae“
-            </blockquote>
-          </li>
-        </ul>
+              <blockquote class="team-list__text">
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae“
+              </blockquote>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
     <footer class="page-footer">
-      <a href="/">
-        <img src="./images/logo.svg" alt="Awesome UI logo" />
-      </a>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-      <p>Copyright &copy; 2022 AWESOME</p>
-      <p>All rights reserved</p>
-      <address>
-        <ul class="list">
-          <li>
-            <a href="#">
-              <img src="./images/instagram.svg" alt="Instagram" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./images/dribbble.svg" alt="Dribbble" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./images/twitter.svg" alt="Twitter" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="./images/youtube.svg" alt="YouTube" />
-            </a>
-          </li>
-        </ul>
-      </address>
+      <div class="container page-footer__container">
+        <div class="address-box">
+          <a class="logo-footer" href="/">
+            <img src="./images/logo.svg" alt="Awesome UI logo" />
+          </a>
+          <div class="address-box__text-box">
+            <p class="address-box__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <p class="address-box__text">Copyright &copy; 2022 AWESOME</p>
+            <p class="address-box__text">All rights reserved</p>
+          </div>
+          <address>
+            <ul class="address-list list">
+              <li>
+                <a href="#">
+                  <img src="./images/instagram.svg" alt="Instagram" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/dribbble.svg" alt="Dribbble" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/twitter.svg" alt="Twitter" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/youtube.svg" alt="YouTube" />
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
 
-      <div class="company-box">
-        <p class="company-box__text">Company</p>
+        <div class="page-footer__link-box">
+          <div class="company-box">
+            <p class="company-box__text">Company</p>
 
-        <ul class="company-box__list list">
-          <li class="company-box__item">
-            <a class="company-box__link" href="#">Lorem Ipsum 1</a>
-          </li>
-          <li class="company-box__item">
-            <a class="company-box__link" href="#">Lorem 2</a>
-          </li>
-          <li class="company-box__item">
-            <a class="company-box__link" href="#">Lorem 3</a>
-          </li>
-          <li class="company-box__item">
-            <a class="company-box__link" href="#">Lorem 4</a>
-          </li>
-          <li class="company-box__item">
-            <a class="company-box__link" href="#">Lorem 5</a>
-          </li>
-        </ul>
+            <ul class="company-box__list list">
+              <li class="company-box__item">
+                <a class="company-box__link" href="#">Lorem Ipsum 1</a>
+              </li>
+              <li class="company-box__item">
+                <a class="company-box__link" href="#">Lorem 2</a>
+              </li>
+              <li class="company-box__item">
+                <a class="company-box__link" href="#">Lorem 3</a>
+              </li>
+              <li class="company-box__item">
+                <a class="company-box__link" href="#">Lorem 4</a>
+              </li>
+              <li class="company-box__item">
+                <a class="company-box__link" href="#">Lorem 5</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="support-box">
+            <p class="support-box__text">Support</p>
+
+            <ul class="support-box__list list">
+              <li class="support-box__item">
+                <a class="support-box__link" href="#">Lorem Ipsum 6</a>
+              </li>
+              <li class="support-box__item">
+                <a class="support-box__link" href="#">Lorem Ipsum 7</a>
+              </li>
+              <li class="support-box__item">
+                <a class="support-box__link" href="#">Lorem Ipsum 8</a>
+              </li>
+              <li class="support-box__item">
+                <a class="support-box__link" href="#">Lorem Ipsum 9</a>
+              </li>
+              <li class="support-box__item">
+                <a class="support-box__link" href="#"> Lorem Ipsum 10</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <form class="form-footer">
+          <p class="form-footer__text">Send message</p>
+
+          <input
+            class="form-footer__input"
+            type="email"
+            name="email"
+            aria-label="enter email"
+            placeholder="Your email address"
+          />
+
+          <button class="btn btn--primary" type="submit">Send message</button>
+        </form>
       </div>
-
-      <div class="support-box">
-        <p class="support-box__text">Support</p>
-
-        <ul class="support-box__list list">
-          <li class="support-box__item">
-            <a class="support-box__link" href="#">Lorem Ipsum 6</a>
-          </li>
-          <li class="support-box__item">
-            <a class="support-box__link" href="#">Lorem Ipsum 7</a>
-          </li>
-          <li class="support-box__item">
-            <a class="support-box__link" href="#">Lorem Ipsum 8</a>
-          </li>
-          <li class="support-box__item">
-            <a class="support-box__link" href="#">Lorem Ipsum 9</a>
-          </li>
-          <li class="support-box__item">
-            <a class="support-box__link" href="#"> Lorem Ipsum 10</a>
-          </li>
-        </ul>
-      </div>
-
-      <form class="form-footer">
-        <p class="form-footer__text">Send message</p>
-
-        <label>
-          <input type="email" name="email" />
-        </label>
-
-        <button class="btn btn--primary" type="submit">Send message</button>
-      </form>
     </footer>
   </body>
 </html>
