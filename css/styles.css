@@ -47,6 +47,7 @@
     ),
     #ffffff;
   --footer-bg-color: #f0dcc5;
+  --social-network-icon-bg: #dfd1c0;
 
   --btn-color: #fefefe;
   --btn-bg-color: linear-gradient(102.3deg, #647b64 -4.62%, #66ac66 178.22%),
@@ -64,6 +65,19 @@ body {
 
 img {
   display: block;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .container {
@@ -120,6 +134,9 @@ img {
 /* Button  */
 
 .btn {
+  display: flex;
+  align-items: center;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -152,6 +169,11 @@ img {
   box-shadow: 0px 20px 40px rgba(128, 143, 150, 0.4);
 }
 
+.btn__icon {
+  margin-left: 16px;
+  fill: currentColor;
+}
+
 /* header  */
 
 .page-header {
@@ -172,6 +194,11 @@ img {
   justify-content: space-between;
   align-items: center;
   flex-grow: 1;
+}
+
+.site-nav__logo {
+  display: flex;
+  align-items: center;
 }
 
 .site-nav__list {
@@ -254,22 +281,49 @@ img {
   column-gap: 32px;
 }
 
-.advantages-list__item {
+.advantages-list__link {
   padding: 32px 40px;
   max-width: 288px;
 
   border-radius: 8px;
 }
 
-.advantages-list__item:hover,
-.advantages-list__item:focus {
+.advantages-list__link,
+.feature-list__link {
+  display: block;
+
+  text-decoration: none;
+}
+
+.advantages-list__link:hover,
+.advantages-list__link:focus {
   background-color: var(--card-accent-color);
   box-shadow: 0px 5.87438px 31.33px rgba(155, 148, 148, 0.17);
 }
 
-.advantages-list__link,
-.feature-list__link {
-  text-decoration: none;
+.advantages-list__icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  width: 48px;
+  height: 48px;
+
+  color: var(--accent-color);
+
+  background-color: var(--card-accent-color);
+  border-radius: 8px;
+}
+
+.advantages-list__link:hover .advantages-list__icon-box,
+.advantages-list__link:focus .advantages-list__icon-box {
+  color: var(--card-accent-color);
+
+  background-color: var(--accent-color);
+}
+
+.advantages-list__icon {
+  fill: currentColor;
 }
 
 .advantages-list__title,
@@ -281,12 +335,12 @@ img {
 }
 
 .advantages-list__title {
-  margin-top: 16px;
+  margin-top: 0;
   margin-bottom: 8px;
 }
 
 .feature-list__title {
-  margin-top: 32px;
+  margin-top: 0;
   margin-bottom: 16px;
 }
 
@@ -307,23 +361,35 @@ img {
   gap: 44px;
 }
 
-.feature-list__item {
+.feature-list__link {
   padding: 64px 50px 59px 50px;
 
   background: var(--card-bg-gradient);
   border-radius: 8px;
 }
 
-.feature-list__item:hover,
-.feature-list__item:focus {
+.feature-list__link:hover,
+.feature-list__link:focus {
   background: var(--accent-color);
 }
 
-.feature-list__item:hover .feature-list__title,
-.feature-list__item:focus .feature-list__title,
-.feature-list__item:hover .feature-list__descr,
-.feature-list__item:focus .feature-list__descr {
+.feature-list__link:hover .feature-list__title,
+.feature-list__link:focus .feature-list__title,
+.feature-list__link:hover .feature-list__descr,
+.feature-list__link:focus .feature-list__descr {
   color: var(--card-accent-color);
+}
+
+.feature-list__icon {
+  display: block;
+  margin-bottom: 32px;
+
+  fill: var(--accent-color);
+}
+
+.feature-list__link:hover .feature-list__icon,
+.feature-list__link:focus .feature-list__icon {
+  fill: var(--card-accent-color);
 }
 
 /* About us  */
@@ -397,8 +463,9 @@ img {
   max-width: 268px;
 }
 
-.logo-footer {
-  display: block;
+.page-footer__logo {
+  display: flex;
+  align-items: center;
   margin-bottom: 16px;
 }
 
@@ -419,6 +486,30 @@ img {
 .address-list {
   display: flex;
   gap: 16px;
+}
+
+.address-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+
+  color: var(--accent-color);
+
+  background-color: var(--social-network-icon-bg);
+  border-radius: 50%;
+}
+
+.address-list__link:hover,
+.address-list__link:focus {
+  color: var(--card-accent-color);
+
+  background-color: var(--accent-color);
+}
+
+.address-list__icon {
+  fill: currentColor;
 }
 
 .page-footer__link-box {
