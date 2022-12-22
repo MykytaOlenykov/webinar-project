@@ -24,16 +24,16 @@
 
           <ul class="site-nav__list list">
             <li class="site-nav__item">
-              <a class="site-nav__link" href="#">Benefits</a>
+              <a class="site-nav__link" href="#benefits">Benefits</a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="#">Features</a>
+              <a class="site-nav__link" href="#features">Features</a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="#">About</a>
+              <a class="site-nav__link" href="#about">About</a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="#">Team</a>
+              <a class="site-nav__link" href="#team">Team</a>
             </li>
           </ul>
         </nav>
@@ -67,10 +67,10 @@
       </section>
 
       <!-- Advantages -->
-      <section class="section">
+      <section class="section" id="benefits">
         <div class="container advantages-container">
           <div class="advantages-box">
-            <h2 class="section__title">Advantages</h2>
+            <h2 class="section__title section__title--gradient">Advantages</h2>
             <p class="section__descr">Our Benefits</p>
 
             <p class="section__text">
@@ -148,8 +148,8 @@
       </section>
 
       <!-- Features  -->
-      <section class="section">
-        <div class="container">
+      <section class="section" id="features">
+        <div class="container container--gradient">
           <h2 class="section__title">Features</h2>
           <p class="section__descr">What we can apply</p>
 
@@ -192,9 +192,9 @@
       </section>
 
       <!-- About us  -->
-      <section class="section">
+      <section class="section" id="about">
         <div class="container about-us-container">
-          <img src="./images/our-team.jpg" alt="Our team" />
+          <img src="./images/our-team.jpg" alt="Our team" width="570" />
           <div class="about-us-box">
             <h2 class="section__title">About us</h2>
             <p class="section__descr">Who we are</p>
@@ -217,7 +217,7 @@
       </section>
 
       <!-- Our team  -->
-      <section class="section">
+      <section class="section" id="team">
         <div class="container">
           <h2 class="section__title">Our Team</h2>
           <p class="section__descr">How we look like</p>
@@ -225,8 +225,10 @@
           <ul class="team-list list">
             <li class="team-list__item">
               <img class="team-list__img" src="./images/person-1.png" alt="" />
-              <p class="team-list__descr">CTO May & Baker</p>
-              <h3 class="team-list__title">Tayo Oshinuwa</h3>
+              <div class="team-list__box">
+                <p class="team-list__descr">CTO May & Baker</p>
+                <h3 class="team-list__title">Tayo Oshinuwa</h3>
+              </div>
 
               <blockquote class="team-list__text">
                 “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae“
@@ -235,8 +237,10 @@
 
             <li class="team-list__item">
               <img class="team-list__img" src="./images/person-2.png" alt="" />
-              <p class="team-list__descr">CTO May & Baker</p>
-              <h3 class="team-list__title">Tayo Oshinuwa</h3>
+              <div class="team-list__box">
+                <p class="team-list__descr">CTO May & Baker</p>
+                <h3 class="team-list__title">Tayo Oshinuwa</h3>
+              </div>
 
               <blockquote class="team-list__text">
                 “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae“
@@ -245,8 +249,10 @@
 
             <li class="team-list__item">
               <img class="team-list__img" src="./images/person-3.png" alt="" />
-              <p class="team-list__descr">CTO May & Baker</p>
-              <h3 class="team-list__title">Tayo Oshinuwa</h3>
+              <div class="team-list__box">
+                <p class="team-list__descr">CTO May & Baker</p>
+                <h3 class="team-list__title">Tayo Oshinuwa</h3>
+              </div>
 
               <blockquote class="team-list__text">
                 “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis vitae“
@@ -274,7 +280,6 @@
             <ul class="address-list list">
               <li class="address-list__item">
                 <a class="address-list__link" href="#" aria-label="Instagram">
-                  <span class="visually-hidden">Instagram</span>
                   <svg class="address-list__icon" width="16" height="16">
                     <use href="./images/icons.svg#instagram"></use>
                   </svg>
@@ -282,7 +287,6 @@
               </li>
               <li class="address-list__item">
                 <a class="address-list__link" href="#" aria-label="Dribbble">
-                  <span class="visually-hidden">Dribbble</span>
                   <svg class="address-list__icon" width="16" height="16">
                     <use href="./images/icons.svg#dribbble"></use>
                   </svg>
@@ -290,7 +294,6 @@
               </li>
               <li class="address-list__item">
                 <a class="address-list__link" href="#" aria-label="Twitter">
-                  <span class="visually-hidden">Twitter</span>
                   <svg class="address-list__icon" width="16" height="16">
                     <use href="./images/icons.svg#twitter"></use>
                   </svg>
@@ -298,7 +301,6 @@
               </li>
               <li class="address-list__item">
                 <a class="address-list__link" href="#" aria-label="YouTube">
-                  <span class="visually-hidden">YouTube</span>
                   <svg class="address-list__icon" width="16" height="16">
                     <use href="./images/icons.svg#youtube"></use>
                   </svg>
@@ -374,5 +376,9 @@
         </form>
       </div>
     </footer>
+
+    <div class="backdrop">
+      <div class="modal"></div>
+    </div>
   </body>
 </html>
