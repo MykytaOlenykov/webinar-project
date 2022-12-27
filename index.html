@@ -54,7 +54,7 @@
               pellentesque et. Tristique ullamcorper ac pharetra in nisi sit vivamus lorem.
             </p>
 
-            <button class="btn btn--primary" type="button">
+            <button class="btn btn--primary open-modal" type="button">
               Get started
               <svg class="btn__icon" width="24" height="24">
                 <use href="./images/icons.svg#arrow"></use>
@@ -359,13 +359,12 @@
         <form class="form-footer">
           <p class="form-footer__text">Send message</p>
 
-          <input
-            class="form-footer__input"
-            type="email"
+          <textarea
+            class="form-footer__field"
             name="email"
             aria-label="enter email"
             placeholder="Your email address"
-          />
+          ></textarea>
 
           <button class="btn btn--primary" type="submit">
             Send message
@@ -377,8 +376,69 @@
       </div>
     </footer>
 
-    <div class="backdrop">
-      <div class="modal"></div>
+    <div class="backdrop backdrop--is-hidden">
+      <div class="modal">
+        <button class="close-btn close-modal" type="button">
+          <svg class="close-btn__img" aria-label="Button close modal" width="24" height="24">
+            <use href="./images/icons.svg#close-modal"></use>
+          </svg>
+        </button>
+        <form>
+          <strong class="modal__form-title">Залиште свої дані</strong>
+
+          <div class="modal__form-field">
+            <label class="modal__form-label" for="name">Ім'я</label>
+            <input class="modal__form-input" type="text" name="name" id="name" />
+            <svg class="modal__form-icon" width="16" height="16">
+              <use href="./images/icons.svg#person"></use>
+            </svg>
+          </div>
+
+          <div class="modal__form-field">
+            <label class="modal__form-label" for="tel">Телефон</label>
+            <input class="modal__form-input" type="tel" name="tel" id="tel" />
+            <svg class="modal__form-icon" width="16" height="16">
+              <use href="./images/icons.svg#phone"></use>
+            </svg>
+          </div>
+
+          <div class="modal__form-field">
+            <label class="modal__form-label" for="email">Пошта</label>
+            <input class="modal__form-input" type="email" name="email" id="email" />
+            <svg class="modal__form-icon" width="16" height="16">
+              <use href="./images/icons.svg#email"></use>
+            </svg>
+          </div>
+
+          <label class="modal__form-label" for="comment">Коментар</label>
+          <textarea
+            class="modal__form-comment"
+            name="comment"
+            id="comment"
+            placeholder="Введіть коментар..."
+          ></textarea>
+
+          <label class="modal__form-label-policy">
+            <input class="modal__form-checkbox" type="checkbox" name="policy" />
+            <svg class="modal__form-icon-check" width="20" height="20">
+              <use href="./images/icons.svg#checked"></use>
+            </svg>
+            <span class="modal__form-policy"
+              >Погоджуюся з розсилкою та приймаю
+              <a class="modal__form-policy-link" href="#">Умови договору</a></span
+            >
+          </label>
+
+          <button class="btn btn--primary btn--center" type="submit">
+            Get started
+            <svg class="btn__icon" width="24" height="24">
+              <use href="./images/icons.svg#arrow"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
     </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
