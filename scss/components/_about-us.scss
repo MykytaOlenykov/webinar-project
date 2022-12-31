@@ -1,0 +1,27 @@
+.about-us-section {
+  &__container {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &::before {
+      position: absolute;
+      top: 40px;
+      left: 56px;
+      z-index: -1;
+
+      content: '';
+      display: block;
+      width: 570px;
+      height: 530px;
+
+      background: var(--primary-gradient);
+    }
+  }
+
+  &__box {
+    max-width: 454px;
+  }
+}
