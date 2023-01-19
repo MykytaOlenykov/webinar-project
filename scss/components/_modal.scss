@@ -1,0 +1,218 @@
+.backdrop {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.2);
+
+  overflow-y: scroll;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity var(--duration) var(--timing-function);
+
+  &--is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+
+  transition: color var(--duration) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  &__img {
+    fill: currentColor;
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+
+  padding: 40px;
+  max-width: 360px;
+  width: 100%;
+
+  background-color: var(--form-bg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  transform: translateX(-50%) scale(1);
+  transition: transform var(--duration) var(--timing-function);
+
+  @media screen and (min-width: $desktop) {
+    top: 50%;
+
+    max-width: 528px;
+
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .backdrop--is-hidden & {
+    transform: translateX(-50%) scale(0.9);
+
+    @media screen and (min-width: $desktop) {
+      transform: translate(-50%, -50%) scale(0.9);
+    }
+  }
+
+  &__title {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 8px;
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  &__field {
+    position: relative;
+
+    margin-bottom: 16px;
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 8px;
+
+    font-size: 14px;
+    line-height: 1.57;
+  }
+
+  &__input {
+    display: block;
+    padding: 12px 12px 12px 40px;
+    width: 100%;
+    height: 40px;
+
+    font-size: 12px;
+    line-height: 1.33;
+    color: var(--prymary-color);
+
+    border: 1px solid #bdbdbd;
+    border-radius: 4px;
+    transition: border-color var(--duration) var(--timing-function);
+    outline: none;
+
+    &:focus {
+      border-color: var(--accent-color);
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    bottom: 11px;
+    left: 12px;
+
+    fill: var(--prymary-color);
+
+    pointer-events: none;
+
+    transition: fill var(--duration) var(--timing-function);
+
+    .modal__input:focus + & {
+      fill: var(--accent-color);
+    }
+  }
+
+  &__comment {
+    display: block;
+    padding: 8px 12px;
+    margin-bottom: 24px;
+    width: 100%;
+    height: 120px;
+
+    font-size: 12px;
+    line-height: 1.33;
+    color: var(--prymary-color);
+
+    resize: none;
+    border: 1px solid #bdbdbd;
+    border-radius: 4px;
+    transition: border-color var(--duration) var(--timing-function);
+    outline: none;
+
+    &::placeholder {
+      font-size: 12px;
+      line-height: 1.33;
+      color: var(--prymary-color);
+    }
+
+    &:focus {
+      border-color: var(--accent-color);
+    }
+  }
+
+  &__label-policy {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+  &__checkbox {
+    appearance: none;
+    position: absolute;
+  }
+
+  &__icon-check {
+    margin-right: 8px;
+
+    cursor: pointer;
+    border: 2px solid var(--prymary-color);
+    border-radius: 3px;
+
+    transition: background-color var(--duration) var(--timing-function),
+      border-color var(--duration) var(--timing-function);
+
+    .modal__checkbox:checked + &,
+    .modal__checkbox:checked:focus + & {
+      background-color: var(--accent-color);
+      border: none;
+    }
+
+    .modal__checkbox:focus + & {
+      border-color: var(--accent-color);
+    }
+  }
+
+  &__policy {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--prymary-color);
+    user-select: none;
+  }
+
+  &__policy-link {
+    color: var(--accent-color);
+  }
+}

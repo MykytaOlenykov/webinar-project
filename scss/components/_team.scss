@@ -1,0 +1,56 @@
+.team-list {
+  @extend %list;
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+  }
+
+  &__item {
+    position: relative;
+
+    padding: 24px 32px;
+
+    background: var(--card-bg-gradient);
+    border-radius: 8px;
+  }
+
+  &__img {
+    margin-bottom: 24px;
+    width: 180px;
+    height: 264px;
+  }
+
+  &__box {
+    position: absolute;
+
+    top: 24px;
+    right: 32px;
+  }
+
+  &__descr {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-weight: 500;
+    color: var(--secondary-color);
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.57;
+  }
+
+  &__text {
+    margin: 0;
+    font-style: italic;
+    letter-spacing: 0.04em;
+  }
+}
