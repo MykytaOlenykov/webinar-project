@@ -1,15 +1,18 @@
 .page-footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
   background-color: var(--footer-bg-color);
 
-  &__container {
-    padding-top: 40px;
-    padding-bottom: 40px;
+  @media screen and(min-width: $desktop) {
+    padding-top: 46px;
+    padding-bottom: 50px;
+  }
 
+  &__container {
     @media screen and(min-width: $desktop) {
       display: flex;
       justify-content: space-between;
-      padding-top: 46px;
-      padding-bottom: 50px;
     }
   }
 
@@ -92,6 +95,10 @@
   max-width: 168px;
   width: 100%;
 
+  @media screen and (min-width: $desktop) {
+    width: 168px;
+  }
+
   &__text {
     margin-top: 0;
     margin-bottom: 24px;
@@ -121,7 +128,7 @@
       left: 0;
       bottom: 4px;
 
-      content: '';
+      content: "";
       display: block;
       height: 1px;
       width: 100%;
@@ -139,6 +146,10 @@
 .support-box {
   max-width: 168px;
   width: 100%;
+
+  @media screen and (min-width: $desktop) {
+    width: 168px;
+  }
 
   &__text {
     margin-top: 0;
@@ -169,7 +180,7 @@
       left: 0;
       bottom: 4px;
 
-      content: '';
+      content: "";
       display: block;
       height: 1px;
       width: 100%;
